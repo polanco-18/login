@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Firebase</title> 
+    <title>Firebase - Crear Usuario</title> 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
@@ -26,11 +26,15 @@
 <body style="background-color: royalblue;">
 <div class="container">
     <br><br><br><br>
-    <div class="card" style="width: 36rem; border-style: none;margin: auto;"> 
+    <div class="card" style="width: 36rem; border-style: none;margin: auto;" > 
         <div class="card-body">
         <br> 
-        <h3 class="text-center"><b>Login</b></h3>
+        <h3 class="text-center"><b>Creación de Usuario</b></h3>
         <br>
+          <label>usuario :</label>
+          <br>
+          <input type="text" class="form-control" id="usuario">   
+          <br>
           <label>Correo :</label>
           <br>
           <input type="email" class="form-control" id="email">   
@@ -38,12 +42,11 @@
           <label>Contraseña :</label>
           <input type="password" class="form-control" id="password"> 
           <br>
-        <button onclick="ingreso()" class="btn btn-outline-primary btn-block">Ingresar</button>
+        <button onclick="registrar()" class="btn btn-outline-primary btn-block">Crear</button>
         <br>
-        <a href="CrearUsuario.html">Crear Usuario</a>
-        <br>
+        <a href="index.html">Ingresar</a>
         </div>
-        </div>
+    </div>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
